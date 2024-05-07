@@ -1,0 +1,7 @@
+package com.kh.datePre;
+
+public class DatePre3 {
+	public static void main(String[] args) {
+		
+	}
+}

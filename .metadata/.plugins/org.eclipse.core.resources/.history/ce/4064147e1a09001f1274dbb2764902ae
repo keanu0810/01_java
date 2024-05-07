@@ -1,0 +1,120 @@
+package ncs.test13;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Inventory {
+	private String productName;// 제품명
+	private Date putDate;// 입고
+	private Date getDate;// 출고
+	private int putAmount;// 입고량
+	private int getAmount;// 출고량
+	private int inventorAmount;// 남은 갯수
+	
+	
+//메서드
+	//기본생성자
+	public Inventory() {
+		// TODO Auto-generated constructor stub
+	}
+	//필수생성자
+
+
+public Inventory(String productName, Date putDate, int putAmount) {
+	super();
+	this.productName = productName;
+	this.putDate = putDate;
+	//this.getDate = getDate;
+	this.putAmount = putAmount;
+	//this.getAmount = getAmount;
+	//this.inventorAmount = inventorAmount;
+}
+	//Getter 
+
+
+public String getProductName() {
+	return productName;
+}
+
+
+public Date getPutDate() {
+	return putDate;
+}
+
+
+public Date getGetDate() {
+	return getDate;
+}
+
+
+public int getPutAmount() {
+	return putAmount;
+}
+
+
+public int getGetAmount() {
+	return getAmount;
+}
+
+
+public int getInventorAmount() {
+	return inventorAmount;
+}
+
+//Setter
+public void setProductName(String productName) {
+	this.productName = productName;
+}
+
+
+public void setPutDate(Date putDate) {
+	this.putDate = putDate;
+}
+
+
+public void setGetDate(Date getDate) {
+	this.getDate = getDate;
+}
+
+
+public void setPutAmount(int putAmount) {
+	this.putAmount = putAmount;
+}
+
+
+public void setGetAmount(int getAmount) {
+	this.getAmount = getAmount;
+}
+
+
+public void setInventorAmount(int inventorAmount) {
+	this.inventorAmount = inventorAmount;
+}
+
+//toString  Override
+@Override
+public String toString() {
+	
+	//날짜 형식을 변경
+	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy년MM월 dd일");
+	String 문자열변환 = dateFormat.format(putDate);
+	
+	String 출고일변환 = dateFormat.format(getDate);
+	
+
+	int 남은재고 = putAmount - getAmount;
+	
+	return "Inventory [productName=" 
+	+", putDate=" + 문자열변환 
+	+", getDate=" + 출고일변환
+	+", 상품재고" + 입고일변환
+	+", 판매량" + 출고일변환
+	+", 팔고 남은 양" + 남은재고;
+	
+	
+}
+
+
+
+
+}

@@ -1,0 +1,10 @@
+package com.kh.test.main;
+
+public class °´Ã¼Èü½ºÅÃ1 {
+	public static void main(String[] args) {
+		Car Â÷ = new Car();
+		
+		Car Â÷1 = new Car();
+		System.out.println("Â÷1 : " + Â÷);
+	}
+}

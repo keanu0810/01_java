@@ -1,0 +1,44 @@
+package com.kh.datePre;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateEx {
+	public static void main(String[] args) {
+		//Date는 최초 1회만 호출 Date now - new Date();
+		Date now = new Date();
+		// 연-월-일 출력하기
+		//SimpleDateFormat sdf1 = new SimpleDateFormat();
+		
+		Date parseDate2 = sdf2.parse(formatSdf2);
+		
+		System.out.println(now);
+		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat sdf2 = new SimpleDateFormat("HH:mm:ss");
+		SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		// 시:분:초
+		//SimpleDateFormat sdf2 = new SimpleDateFormat();
+		
+		String formatDate1 = sdf1.format(now);
+		String formatDate2 = sdf2.format(now);
+		String formatDate3 = sdf3.format(now);
+		
+		
+		// 연-월-일 시:분:초 출력하기
+		//SimpleDateFormat sdf3 = new SimpleDateFormat();
+		
+		System.out.println(formatDate1);
+		System.out.println(formatDate2);
+		System.out.println(formatDate3);
+		
+		
+		//문자열(SimpleDateFormat - String)을 날짜(Date)로 변경
+		String 문자열 = "2024-04-30 15 :30:45";
+		
+	try {
+		Date parsDate = sdf.parse(문자열);
+		System.out.println(parseDate);
+	} catch (Parse)
+		
+	}
+}
