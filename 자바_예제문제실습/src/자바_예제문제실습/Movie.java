@@ -1,6 +1,8 @@
 package 자바_예제문제실습;
 
-public class Movie {
+import java.io.Serializable;
+
+public class Movie implements Serializable{
 	private String 영화제목;
 	private String 영화장르;
 	

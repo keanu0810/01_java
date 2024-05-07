@@ -24,6 +24,7 @@ public class AnimalMain {
 			// toString 으로 출력된느 내용을 저장
 			bw.write(동물.toString());
 			System.out.println("파일이 성공적을 저장되었습니다.");
+			bw.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

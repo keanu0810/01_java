@@ -1,5 +1,7 @@
 package 자바_예제문제실습;
 
+import java.io.Serializable;
+
 /*
  캡슐화 원칙에 맞게 구현하기
  //필드
@@ -13,7 +15,7 @@ package 자바_예제문제실습;
    필수생성자
    @Override toString 활용해서 문자열 출력하기
  */
-public class Animal {
+public class Animal implements Serializable{
 
 //필드
 	private String 호랭이;
