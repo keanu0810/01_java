@@ -22,6 +22,13 @@ package com.kh.OopEx;
    직렬화를 사용하는 경우
    객체나 파일의 상태를 저장해놓고 복원할 경우
    
+   데이터 백업 - 복원
+   	게임에서 상태를 저장하거난 복원할 때 사용
+   	네트워크 통신 : 전송
+   	캐시 저장
+   	
+   	직렬화로 표현해라
+   	implements Serializable
    
  */
 public class 직렬화 {
